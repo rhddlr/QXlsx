@@ -50,6 +50,7 @@ image.cpp \
 main.cpp \
 mergecells.cpp \
 numberformat.cpp \
+    openbigfile.cpp \
 richtext.cpp \
 rowcolumn.cpp \
 style.cpp \

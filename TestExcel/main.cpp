@@ -36,46 +36,46 @@ extern int richtext();
 extern int rowcolumn();
 extern int style();
 extern int worksheetoperations();
-extern int readStyle(); 
+extern int readStyle();
 extern int pages();
+extern int openbigfile();
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
-	QCoreApplication app(argc, argv);
+    QCoreApplication app(argc, argv);
 
-	if ( argc == 2 )
-	{
-		QString strArg1 = argv[1];
-		if ( strArg1 == QString("hello") )
-		{
-			hello();
-			return 0;
-		}
-	}
+    if (argc == 2) {
+        QString strArg1 = argv[1];
+        if (strArg1 == QString("hello")) {
+            hello();
+            return 0;
+        }
+    }
 
-	hello();
-	readStyle();
-	calendar();
-    chart();
-    chartExtended();
-    chartsheet();
-	datavalidation();
-	definename();
-	demo();
-	documentproperty();
-	extractdata();
-	formula();
-	hyperlink();
-	image();
-	mergecells();
-	numberformat();
-	richtext();
-	rowcolumn();
-	style();
-	worksheetoperations();
-    pages();
-	
+    //    hello();
+    //    readStyle();
+    //    calendar();
+    //    chart();
+    //    chartExtended();
+    //    chartsheet();
+    //    datavalidation();
+    //    definename();
+    //    demo();
+    //    documentproperty();
+    //    extractdata();
+    //    formula();
+    //    hyperlink();
+    //    image();
+    //    mergecells();
+    //    numberformat();
+    //    richtext();
+    //    rowcolumn();
+    //    style();
+    //    worksheetoperations();
+    //    pages();
+    openbigfile();
+
     qDebug() << "**** end of main() ****";
 
-	return 0;
+    return 0;
 }
